@@ -9,7 +9,8 @@ object oriented programming will be used
 functions are going to be employed
 style checking for consistency is also employed
 exception checking will also be done using
-try-throw-finally statements
+try-throw-finally statements or the more complete
+try-except-else-finally block style
 """
 
 
