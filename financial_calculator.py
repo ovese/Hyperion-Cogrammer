@@ -65,18 +65,14 @@ class FinanceCalculator:
         print("Debud...<<<")
         if(interest_type == 1):
             print("Simple interest calculator selected")
-            computed_simple_interest = ...
-            fc.simple_interest(principal_amount, interest_rate, tenure)
+            computed_simple_interest = fc.simple_interest(principal_amount, interest_rate, tenure)
             print(f"Simple interest is: ${computed_simple_interest:,.2f}")
-            print(f"Current total amount is: "
-                  "${principal_amount+computed_simple_interest:,.2f}")
+            print(f"Current total amount is: ${principal_amount+computed_simple_interest:,.2f}")
         elif(interest_type == 2):
             print("Compound interest calculator selected")
-            computed_comp_interest = ...
-            fc.compound_interest(principal_amount, interest_rate, tenure)
+            computed_comp_interest = fc.compound_interest(principal_amount, interest_rate, tenure)
             print(f"Compound interest is: ${computed_comp_interest:,.2f}")
-            print(f"Compounded total amount is: "
-                  "${principal_amount+computed_comp_interest:,.2f}")
+            print(f"Compounded total amount is: ${principal_amount+computed_comp_interest:,.2f}")
         else:
             print("Not a known interest selection")
 
