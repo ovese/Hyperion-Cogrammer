@@ -1,0 +1,82 @@
+choice=''
+
+while choice !='3':
+	print("Menu: \n"
+		1. Option 1
+		2. Option 2
+		3. Exit)
+	choice = input("enter your choice:")
+	
+	if choice =='1':
+		print('you chose ooption 1')
+
+	elif choice=='2':
+		print('you chose iption 2')
+	elif choice =='3':
+		print("exitig the code')
+	else:
+		print('invalid option, please try again')
+
+
+
+in try except else and fiinally, try to close open data base connections or files in gthe finally block because trhe finally block is always executed
+
+# its good practice to use strings or chars as menu options
+
+
+travel_destinations = ['london','cape town','hawaii']
+
+while user_input.upper() not in travel_destivnation # wrong
+while user_input.title() not in travel_destivnation # correct
+while user_input.upper() not in ['stop','exit','end']:
+	print(hello)
+	user_input = input('please press enter or enter the word 'stop': ")
+
+using strings or integers as input would depenmd on the amount of code. if the code becomes heavy or big use strings. for the small code, use only numbers
+
+using nmumbers in menu is waste of coding
+only when i have to do calculation should integers be considered
+
+github
+
+1. have git installed
+2. open termiinalor cmd depending on system
+3. check if you have git git --version
+4. 
+
+# list_of_cats.txt contains ['sally\n','gross\n,','
+# file_path = list_of_cats.txt
+with open(file_path, 'r')as file_data_variable:
+content = filedatavaribale.readlines()
+print(content)
+
+for x in content:
+print(c.strip("\n")
+
+print("***************")
+for x in content:
+print(x.strip("\n").strip(', '))
+
+
+**********One on One tutoring*************
+1 working with classes
+2. two classes can be iin same file
+3. tutor doesnt know if its recommended but says we can try
+4. porigraming is big on seperation of concerns
+5. dont put them in same file unless there is an absolute need to do that
+6. helps when testing files and using the classes
+7. for maintanability use modularity
+8. referncing classes in separate files is possible
+9. code reuse
+10. not good to call a class inside itself
+11.Check formulas used in calcultion and correct for financial calculator
+12. when deifing functions. dont make comments
+13. use thew tripple quote docstring underneath the functions
+14 in my ctor, write that in full
+15. i pass params to my ctor but did not use them. if i am not going to use them i shoukd define them in the ctor
+
+probability
+three most commong dirtibutions
+1. uniform distribution
+2.Binomial dist
+3. normal distribution 
