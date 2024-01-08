@@ -80,3 +80,54 @@ three most commong dirtibutions
 1. uniform distribution
 2.Binomial dist
 3. normal distribution 
+
+
+
+
+
+BYB-01
+
+This file will have the results from my codes during the period of my bootcamp
+
+Cover letter of Eseoghene Ovie
+Email: oveseovese@gmail.com
+Mobile: +447983340049
+
+I combine expertise and skill set in Software engineering with automation or mechatronic engineering. My specific strengths are programming with Python and C++ and developing model based automatic controllers from system physical models. In software development, I am proficient at employing Object oriented programming principles to model systems and develop code. In control engineering, I utilize model based principles like state space to model, analyze in matlab/simulink and also generate code.
+
+Link the companies activities here
+
+Show what I have done and not Tell
+
+Relevant achievement
+
+Availability info like visa, disability
+
+*******************************
+Virtual environment
+Marcus Naidoo4:35 PM
+py -m pip install numpy
+Marcus Naidoo4:40 PM
+py -m pip install pip
+
+py -m pip install --user virtualenv
+
+py -m pip install --user virtualenvwrapper-win
+
+py -m venv test
+
+Then to activate the virtual environment:
+
+.\test\Scripts\activate
+
+at the end of programming and 
+before shutting down I should
+type the last line
+
+.\test\Script\deactivate
+
+
+************************
+
+
+
