@@ -16,18 +16,34 @@ If the user is 21, output the message "Congrats on your 21st!"
 
 For any other age, output the message "Age is but a number."
 """
-age = int(input("Enter your age please: "))
 
-if (age >= 40):
-    print("You're over the hill.")
-elif (age > 120):
-    print("Sorry you are dead")
-elif (age > 65 and age < 120):
-    print("Enjoy your retirement")
-elif (age < 13):
-    print("Your qualify for the kiddies discount")
-elif (age == 21):
-    print("Enjoy your 21st!")
+
+class AgeNotPositiveError(Exception):
+    pass
+
+
+try:
+    age_input = input("Enter your age please: ")
+
+    age = int(age_input)
+    if age < 0:
+        raise AgeNotPositiveError(f"Age {age} cant be negative")
+
+except AgeNotPositiveError as age_error:
+    print(f"Error raised: {age_error}")
+
 else:
-    print("Age is but a number.")
-    
+    if (age < 13):
+        print("Your qualify for the kiddies discount")
+    elif (age == 21):
+        print("Enjoy your 21st!")
+    elif (age >= 40 and age <= 65):
+        print("You're over the hill.")
+    elif (age > 65 and age < 100):  # age > 65 and age < 120
+        print("Enjoy your retirement")
+    elif (age > 100):
+        print("Sorry you are dead")
+    else:
+        print("Age is but a number.")
+finally:
+    print("Exiting the age quiz program")
