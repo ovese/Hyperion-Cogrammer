@@ -128,6 +128,22 @@ class Warehouse():
     
     
     def populate_stock_quantity(self, stock_list):
+        # check for the list size
+        sz_list = len(stock_list)
+        stock_value_list = list()
+        stock_value = 0.0
+        count = 0
+        while count != sz_list:
+            # I was surprised the line below worked perfectly
+            stock_value = float(input(f"Enter a stock value for {stock_list[count]}: "))
+            stock_value_list.append(stock_value)
+            count += 1
+            
+        return stock_value_list
+    
+    
+    def create_stock_balance(self):
         pass
+            
         
     

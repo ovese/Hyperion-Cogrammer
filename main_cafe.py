@@ -30,6 +30,12 @@ def main():
     print("\n")
     print("*************Extending functionality of requested code**********")
     
+    stock.get_menu_listv2()
+    
+    print("\n")
+    
+    ret_stock_value_list = stock.populate_stock_quantity(stock_options_list)
+    print(ret_stock_value_list)
         
         
 if __name__ == "__main__":
