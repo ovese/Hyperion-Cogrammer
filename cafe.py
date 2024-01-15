@@ -32,21 +32,7 @@ class Warehouse():
         return menu_list
 
 
-    def get_menu_listv2(self):
-        menu_list = ["bread","olive oil","rice","sugar","water"]
-        print("The menu items to choose from are:")
-        for i in range(len(menu_list)):
-            print(f"{i+1}. {menu_list[i].capitalize()}")
-        
-        return menu_list
-
-
-    """ menu locale can be 
-        mediteranean
-        asiatic
-        european
-        african
-        american
+    """ menu todo
     """
     def get_menu(self, current_menu):
         # current_menu = self.get_menu_list()
@@ -121,5 +107,27 @@ class Warehouse():
         for key,value in ret_stock_value.items():
             print(f"{key.capitalize()}\t\t\t{ret_stock_value[key]}\t\t\t"
                   f"${ret_stock_price[key]:,.2f}\t\t\t${ret_stock_value[key]*ret_stock_price[key]:,.2f}")
+        
+        print("\n")
+        total_stock_worth = 0.0
+        for key,value in ret_stock_value.items():
+            total_stock_worth += (ret_stock_value[key]*ret_stock_price[key])
+        
+        print(f"Total stock capacity is:............................................... ${total_stock_worth:,.2f}")
+        
+        
+    
+
+    def get_menu_listv2(self):
+        menu_list = ["bread","olive oil","rice","sugar","water"]
+        print("The menu items to choose from are:")
+        for i in range(len(menu_list)):
+            print(f"{i+1}. {menu_list[i].capitalize()}")
+        
+        return menu_list
+    
+    
+    def populate_stock_quantity(self, stock_list):
+        pass
         
     

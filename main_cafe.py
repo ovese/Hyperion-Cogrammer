@@ -26,6 +26,10 @@ def main():
     print("\n")    
     # finally we conpute the stock balance
     stock.total_stock(stock_options_list)
+    
+    print("\n")
+    print("*************Extending functionality of requested code**********")
+    
         
         
 if __name__ == "__main__":
