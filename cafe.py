@@ -3,9 +3,20 @@ import pandas as pd
 import math
 
 """The program works with a cafe menu
-    It contains different menu items
+    It contains different menu items, where
     each menu item possesses value and
-    within each value are prices
+    within each value are prices for which
+    the program is going to compute total
+    present stock value per item and the
+    total stock in cafe. However the program
+    is being extened to allow realtime 
+    modification of the cafe stock to mimic
+    depletion and addition to stock.
+    Another extension to the program logic,
+    is adding functioanlity for the change
+    of stock item prices 
+    
+    can we check what items were newly added
     
 """
 
@@ -70,13 +81,8 @@ class Warehouse():
         list_stock_value = [(current_menu[0],13),(current_menu[1],24),
                      (current_menu[2],9), (current_menu[3],17),
                      (current_menu[4],33)]
-        
-        # print(type(list_stock_value))
-        # print(list_stock_value)
-        
+
         dict_stock = dict(list_stock_value)
-        # print(type(dict_stock))
-        # print(dict_stock)
         
         return dict_stock
     
@@ -114,9 +120,7 @@ class Warehouse():
             total_stock_worth += (ret_stock_value[key]*ret_stock_price[key])
         
         print(f"Total stock capacity is:............................................... ${total_stock_worth:,.2f}")
-        
-        
-    
+
 
     def get_menu_listv2(self):
         menu_list = ["bread","olive oil","rice","sugar","water"]
@@ -142,8 +146,65 @@ class Warehouse():
         return stock_value_list
     
     
-    def create_stock_balance(self):
+    def create_stock_balance(self, s_list, sv_list):
+        # here we return the stock list and stock values to form a dictionnary
+        stock_dict = {}
+        
+        # populate the dictionary
+        for i in range(len(s_list)):
+            stock_dict[s_list[i]] = sv_list[i]
+            
+        return stock_dict
+    
+    
+    def add_to_stock(self,stock_list):
+        print("The current stock list is: ")
+        for i in range(len(stock_list)):
+            print(f"{stock_list[i].capitalize()}")
+            
+        added_item = False
+        print("Enter \"yes\" or \"y\" , \"no\" or \"n\" to continue")
+        str_response = input("Do you want to add to cafe stock items: ")
+        while str_response == "yes":
+            # add an item here and append it to list
+            new_item = input("Enter name of item to be added \n "
+                             "which must be different from items\n "
+                             "already in the list")
+            stock_list.append(new_item)
+            
+            str_resp = input("Are you adding another stock item: ")
+            if str_resp == "yes":
+                # go back to the beginning of the while loop
+                continue
+            elif str_resp == "no":
+                print("Nothing more to add")
+                break
+            else:
+                print("Not a known response, try again")
+                
+        # after addition to list
+        print('New stock list after adding to the cafe items')
+        for i in range(len(stock_list)):
+            print(f"{stock_list[i].capitalize()}")
+        
+        updated_stock_list = stock_list  
+          
+        return updated_stock_list
+            
+        
+    def remove_from_stock(self):
+        # in this function a dictionnary is passed which
+        # will allow us use key to delete an item from the
+        # items in the dictionnary
         pass
+    
+    
+    def update_stock_value(self):
+        # this function takes dictionnary and allows user
+        # to update the values within the dictionnary of stocks
+        pass
+        
+        
             
         
     
