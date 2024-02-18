@@ -27,28 +27,28 @@ def main():
     # finally we conpute the stock balance
     stock.total_stock(stock_options_list)
     
-    print("\n")
-    print("*************Extending functionality of requested code**********")
+    # print("\n")
+    # print("*************Extending functionality of requested code**********")
     
-    stock.get_menu_listv2()
+    # stock.get_menu_listv2()
     
-    print("\n")
+    # print("\n")
     
-    ret_stock_value_list = stock.populate_stock_quantity(stock_options_list)
-    print(ret_stock_value_list)
+    # ret_stock_value_list = stock.populate_stock_quantity(stock_options_list)
+    # print(ret_stock_value_list)
     
-    print("\n")
-    ret_stock_value_dict = stock.create_stock_balance(stock_options_list, ret_stock_value_list)
-    print(type(ret_stock_value_dict))
-    print(ret_stock_value_dict)
+    # print("\n")
+    # ret_stock_value_dict = stock.create_stock_balance(stock_options_list, ret_stock_value_list)
+    # print(type(ret_stock_value_dict))
+    # print(ret_stock_value_dict)
     
-    print("\n")
-    ret_updated_stock_list = stock.add_to_stock(stock_options_list)
-    print(ret_updated_stock_list)
+    # print("\n")
+    # ret_updated_stock_list = stock.add_to_stock(stock_options_list)
+    # print(ret_updated_stock_list)
     
-    print("\n")
-    new_stock_value_list = stock.populate_stock_quantity(ret_updated_stock_list)
-    print(new_stock_value_list)
+    # print("\n")
+    # new_stock_value_list = stock.populate_stock_quantity(ret_updated_stock_list)
+    # print(new_stock_value_list)
 
 
 if __name__ == "__main__":

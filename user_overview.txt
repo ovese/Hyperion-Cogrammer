@@ -1,0 +1,7 @@
+Item			 Statistics 
+=================================== 
+Current user: 		 ovese 
+Total users: 		 5 
+Total tasks: 		 11 
+Assigned tasks: 	 2 
+Total allocation(%): 	 18.182 

@@ -1,0 +1,9 @@
+Item				 Statistics 
+=================================== 
+Total tasks: 			 11 
+Completed tasks: 		 6 
+Incomplete tasks: 		 5 
+Completed tasks(%): 	 54.545 
+Incomplete overdue: 	 0 
+Incomplete tasks(%): 	 45.455 
+Overdue(%): 		 0.000 
